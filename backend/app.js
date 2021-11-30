@@ -59,7 +59,6 @@ app.get('/delete/:id',(req,res)=>{
 });
 
 app.post('/edit/:id',(req,res)=>{
-  console.log(req.body)
 	const sql = "UPDATE `react_app`.`todo` SET ? WHERE id = " + req.params.id;
 	con.query(sql,req.body,function(err,result,fields){
 	if (err) throw err;
@@ -68,7 +67,6 @@ app.post('/edit/:id',(req,res)=>{
 });
 
 app.post('/checked/:id',(req,res)=>{
-  console.log(req.body)
 	const sql = "UPDATE `react_app`.`todo` SET ? WHERE id = " + req.params.id;
 	con.query(sql,req.body,function(err,result,fields){
 	if (err) throw err;

@@ -17,7 +17,6 @@ interface TodoProps {
   handleChecked:any
 }
 
-
 const ListItemTodo: React.FC<TodoProps> = memo(props => {
   const {items, hadleisEdit, handleDelete,isdisabled,handleChecked} = props
 
@@ -26,9 +25,7 @@ const ListItemTodo: React.FC<TodoProps> = memo(props => {
       {items.map((value,index) => {
         const labelId = `checkbox-list-label-${value.uuid}`
         return (
-          <ListItem
-          key={value.uuid}
-          >
+          <ListItem key={value.uuid}>
           <ListItemButton disabled={!isdisabled} role={undefined} onClick={()=>{handleChecked(value.id,index)}} dense>
             <ListItemIcon>
               <Checkbox
@@ -42,7 +39,7 @@ const ListItemTodo: React.FC<TodoProps> = memo(props => {
             <ListItemText id={labelId} primary={value.todovalue} disableTypography/>
           </ListItemButton>
           <IconButton disabled={!isdisabled || (value.status===0?false:true)} key={`edit-icon-${value.uuid}`} onClick={()=>hadleisEdit(value.id, value.todovalue)}><EditIcon/></IconButton>
-            <IconButton disabled={!isdisabled} key={`delete-icon-${value.uuid}`} onClick={()=>handleDelete(value.id)}><DeleteIcon/></IconButton>
+          <IconButton disabled={!isdisabled} key={`delete-icon-${value.uuid}`} onClick={()=>handleDelete(value.id)}><DeleteIcon/></IconButton>
           </ListItem>
           )})
       }
