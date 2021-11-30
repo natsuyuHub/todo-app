@@ -88,8 +88,13 @@ button{
   color: #aaa;
 }
 /* ---------------/Menu----------------- */
+/* ---------------Home---------------- */
 
+.home {
+  text-align: center;
+}
 
+/* ---------------/Home---------------- */
 /* -----------AddButton------------ */
 
 .handleBtnContainer {
@@ -161,13 +166,10 @@ button{
 	box-shadow: 0 0 5px 1px rgb(206, 206, 206);
 }
 
-.disabledInput:focus {
-  border: 1px solid rgba(255, 0, 106, 0.57) !important;
-}
-
 .disabledInputText {
   font-family: sans-serif !important;
   font-size: 10px;
+  text-align: start !important;
 }
 
 .todoContainerCenter {
@@ -175,7 +177,59 @@ button{
   justify-content: center;
 }
 
+.todoformlabel input[type=text]:invalid:focus {
+  border: 1px solid rgba(255, 0, 106, 0.57);
+}
+.todoformlabel input[type=text]:invalid +.errorText  {
+  display:block;
+}
+
 /* ----------------/TodoList---------------- */
+/* ----------------EditForm---------------- */
+.editForm {
+  width: 80%;
+	margin: 0px auto;
+  margin-bottom: 22px;
+}
+
+.editFormlabel input[type='text']  {
+	font-size: 16px;
+  font-family:'Quicksand', 'Noto Sans JP',sans-serif;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 0.7em;
+	transition: 0.3s;
+	letter-spacing: 1px;
+	color: #222;
+	border: 1px solid #aaa;
+	border-radius: 4px;
+}
+
+.editFormlabel input[type='text']:hover {
+  border: 1px solid #222;
+}
+
+.editFormlabel input[type='text']:focus {
+  border: 1px solid #222;
+	outline: none;
+	box-shadow: 0 0 5px 1px rgb(206, 206, 206);
+}
+
+.errorText {
+  font-family: sans-serif !important;
+  font-size: 10px;
+  text-align: start !important;
+  display:none;
+}
+
+.editFormlabel input[type=text]:invalid {
+  border: 1px solid rgba(255, 0, 106, 0.57) !important;
+}
+.editFormlabel input[type=text]:invalid +.errorText  {
+  display:block;
+}
+
+/* ----------------/EditForm---------------- */
 
 /* ---------------なんか作ったボタン------------------- */
 .todoBtn {

@@ -8,7 +8,8 @@ import {
 } from "react-router-dom"
 import Container from '@mui/material/Container'
 import './index.css';
-import App from './App';
+import Home from './Home';
+import Data from './Data';
 import TodoList from './TodoList';
 
 ReactDOM.render(
@@ -18,11 +19,13 @@ ReactDOM.render(
         <ul>
           <li><Link to="/">Home</Link></li>
           <li><Link to="/todo">TodoList</Link></li>
+          <li><Link to="/data">Data</Link></li>
         </ul>
       </nav>
       <Switch>
-        <Route exact path="/"><App /></Route>
+        <Route exact path="/"><Home /></Route>
         <Route exact path="/todo"><TodoList /></Route>
+        <Route exact path="/data"><Data /></Route>
       </Switch>
     </Container>
   </BrowserRouter>,
