@@ -1,5 +1,5 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react'
+import ReactDOM from 'react-dom'
 import {
   BrowserRouter,
   Switch,
@@ -7,10 +7,10 @@ import {
   Link,
 } from "react-router-dom"
 import Container from '@mui/material/Container'
-import './index.css';
-import Home from './Home';
-import Data from './Data';
-import TodoList from './TodoList';
+import './index.css'
+import Home from './Home'
+import Data from './Data'
+import TodoList from './TodoList'
 
 ReactDOM.render(
   <BrowserRouter>

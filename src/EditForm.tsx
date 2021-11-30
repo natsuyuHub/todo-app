@@ -28,4 +28,4 @@ const EditForm: React.FC<Props> = memo(props => {
   )
 })
 
-export default EditForm;
+export default EditForm

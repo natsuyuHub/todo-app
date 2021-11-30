@@ -1,10 +1,10 @@
 import 'whatwg-fetch';
-import React,{ useState,useEffect } from 'react'
+import React,{ memo,useState,useEffect } from 'react'
 import { v4 as uuidv4 } from 'uuid'
 import ListItemTodo from './ListItemTodo'
 import Form from './Form'
 import EditForm from './EditForm'
-import { useForm } from "react-hook-form";
+import { useForm } from "react-hook-form"
 
 interface DataProps {
   id: number
@@ -18,7 +18,7 @@ interface SendEditValue {
   text?: string
 }
 
-const Data: React.FC = () => {
+const Data: React.FC = memo(() => {
   const [data,setData] = useState<DataProps[]>([])
   const [editValue, setEditValue] = useState<SendEditValue>()
   const [input,setInput] = useState<string|null>()
@@ -51,7 +51,6 @@ const Data: React.FC = () => {
   }
 
   const editAPI = (id:number, text:string) => {
-    console.log("id",id,"text",text)
     const requestEditOptions = {
         method: "POST",
         headers:{"Content-Type": "application/json"},
@@ -107,7 +106,6 @@ const Data: React.FC = () => {
     if(!input){return errorCase("※フォームが空です")}
     if(input){
       if(editValue && editValue.id && editValue.text){
-        console.log(editValue.text !== input)
         editValue.text !== input? editAPI(editValue.id,input) : console.log("Same Data")
         setEditValue(undefined)
         resetFormData()
@@ -126,12 +124,12 @@ const Data: React.FC = () => {
     deleteAPI(id)
   }
 
-  const hadleisEdit = (id:number, text:string)=>{
+  const hadleisEdit = (id:number, text:string) => {
     setEditValue({id:id, text:text})
     setInput(text)
   }
 
-  const handleChecked =(id:number,index:number) => {
+  const handleChecked = (id:number,index:number) => {
     let sendstatus = 0
     data[index].status === 0 ? sendstatus=1 : sendstatus=0
     checkedAPI(id,sendstatus)
@@ -163,6 +161,6 @@ const Data: React.FC = () => {
         handleChecked={handleChecked}/>
       </div>
     </div>
-  );
-}
-export default Data;
+  )
+})
+export default Data
