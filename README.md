@@ -1,2 +1,7 @@
-# aws-amplify
-npm install --legacy-peer-deps
+#Get Start
+
+$ cd backend
+$ npm run dev
+
+cd ../
+npm start
