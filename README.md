@@ -1,7 +1,13 @@
 ## Get Start
 
-`$ cd backend`  
-`$ npm run dev`  
-  
-`$ cd ../`  
-`$ npm start`  
+###### start backend
+
+`$ cd backend`
+
+`$ npm run dev`
+
+###### start frontend
+
+`$ cd ../`
+
+`$ npm start`
