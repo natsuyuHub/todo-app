@@ -2,53 +2,61 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&family=Quicksand:wght@300&display=swap');
 
 html {
-  margin: 0;
-  padding: 0;
-  box-sizing:border-box;
-  -webkit-box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
 }
 
 body {
-  font-family: 'Quicksand', 'Noto Sans JP',sans-serif;
+	font-family: 'Quicksand', 'Noto Sans JP', sans-serif;
 }
 
-*, *::before, *::after {
-  -webkit-box-sizing: inherit;
-  box-sizing:border-box;
+*,
+*::before,
+*::after {
+	-webkit-box-sizing: inherit;
+	box-sizing: border-box;
 }
 
-h1 ,h2, h3, h4, h5, h6 {
-  font-weight: 100;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 100;
 }
 
-h1, h2 {
-  text-align: center;
-  vertical-align:middle;
-  margin: 0px;
+h1,
+h2 {
+	text-align: center;
+	vertical-align: middle;
+	margin: 0px;
 }
 
 hr {
-  margin:0;
+	margin: 0;
 }
 
 ul li {
-  font-family: 'Quicksand', 'Noto Sans JP',sans-serif;
+	font-family: 'Quicksand', 'Noto Sans JP', sans-serif;
 }
 
 a {
-  color: black;
-  text-decoration: none;
+	color: black;
+	text-decoration: none;
 }
 
-a:hover{
-  color: #aaa;
+a:hover {
+	color: #aaa;
 }
 
 p {
-  font-size: 16px;
+	font-size: 16px;
 }
 
-button{
+button {
 	background: none;
 	border: none;
 	outline: none;
@@ -59,75 +67,75 @@ button{
 
 /* -----------Menu------------ */
 
-.menu-nav  {
-  text-align: center;
-  margin: 30px 0;
+.menu-nav {
+	text-align: center;
+	margin: 30px 0;
 }
 .menu-nav ul {
-  margin: 0 ;
-  padding: 0 ;
+	margin: 0;
+	padding: 0;
 }
 
-.menu-nav ul li{
-  list-style:none;
-  display: inline-block;
-  padding: 0 10px;
+.menu-nav ul li {
+	list-style: none;
+	display: inline-block;
+	padding: 0 10px;
 }
 
 .menu-nav ul li a {
-  text-decoration: none;
-  color: #222;
+	text-decoration: none;
+	color: #222;
 }
 
-.menu-nav ul li a:hover{
-  color: #aaa;
+.menu-nav ul li a:hover {
+	color: #aaa;
 }
 
 /* ---------------/Menu----------------- */
 /* ---------------Home---------------- */
 
 .home {
-  text-align: center;
+	text-align: center;
 }
 
 /* ---------------/Home---------------- */
 /* -----------AddButton------------ */
 
 .handleBtnContainer {
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  margin:30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 30px;
 }
 
 .handleBtnContainerList {
-  margin:0 20px;
+	margin: 0 20px;
 }
 
 .divbtn {
-  width:200px;
-  height:200px;
-  background-color: #73bfae;
-  border-radius: 20%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
+	width: 200px;
+	height: 200px;
+	background-color: #73bfae;
+	border-radius: 20%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
 }
 
-.divbtn:hover{
-  opacity: 0.7;
+.divbtn:hover {
+	opacity: 0.7;
 }
 
 .containerBtn {
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
 }
 
 .containerBtn div {
-  margin: 10px;
+	margin: 10px;
 }
 
 /* ---------------/AddButton----------------- */
@@ -135,13 +143,13 @@ button{
 /* ---------------TodoList----------------- */
 
 .todolistForm {
-  width: 80%;
+	width: 80%;
 	margin: 40px auto;
 }
 
 .todolistForm input[type='text'] {
 	font-size: 16px;
-  font-family:'Quicksand', 'Noto Sans JP',sans-serif;
+	font-family: 'Quicksand', 'Noto Sans JP', sans-serif;
 	box-sizing: border-box;
 	width: 100%;
 	padding: 0.7em;
@@ -153,46 +161,46 @@ button{
 }
 
 .todoformlabel input[type='text']:hover {
-  border: 1px solid #222;
+	border: 1px solid #222;
 }
 
 .todoformlabel input[type='text']:focus {
-  border: 1px solid #222;
+	border: 1px solid #222;
 	outline: none;
 	box-shadow: 0 0 5px 1px rgb(206, 206, 206);
 }
 
 .disabledInputText {
-  font-family: sans-serif !important;
-  font-size: 10px;
-  text-align: start !important;
+	font-family: sans-serif !important;
+	font-size: 10px;
+	text-align: start !important;
 }
 
 .todoContainerCenter {
-  display: flex;
-  justify-content: center;
+	display: flex;
+	justify-content: center;
 }
 
-.todoformlabel input[type=text]:invalid:focus {
-  border: 1px solid rgba(255, 0, 106, 0.57);
+.todoformlabel input[type='text']:invalid:focus {
+	border: 1px solid rgba(255, 0, 106, 0.57);
 }
 
-.todoformlabel input[type=text]:invalid +.errorText  {
-  display:block;
+.todoformlabel input[type='text']:invalid + .errorText {
+	display: block;
 }
 
 /* ----------------/TodoList---------------- */
 /* ----------------EditForm---------------- */
 
 .editForm {
-  width: 80%;
+	width: 80%;
 	margin: 0px auto;
-  margin-bottom: 22px;
+	margin-bottom: 22px;
 }
 
-.editFormlabel input[type='text']  {
+.editFormlabel input[type='text'] {
 	font-size: 16px;
-  font-family:'Quicksand', 'Noto Sans JP',sans-serif;
+	font-family: 'Quicksand', 'Noto Sans JP', sans-serif;
 	box-sizing: border-box;
 	width: 100%;
 	padding: 0.7em;
@@ -204,47 +212,47 @@ button{
 }
 
 .editFormlabel input[type='text']:hover {
-  border: 1px solid #222;
+	border: 1px solid #222;
 }
 
 .editFormlabel input[type='text']:focus {
-  border: 1px solid #222;
+	border: 1px solid #222;
 	outline: none;
 	box-shadow: 0 0 5px 1px rgb(206, 206, 206);
 }
 
 .errorText {
-  font-family: sans-serif !important;
-  font-size: 10px;
-  text-align: start !important;
-  display:none;
+	font-family: sans-serif !important;
+	font-size: 10px;
+	text-align: start !important;
+	display: none;
 }
 
-.editFormlabel input[type=text]:invalid {
-  border: 1px solid rgba(255, 0, 106, 0.57) !important;
+.editFormlabel input[type='text']:invalid {
+	border: 1px solid rgba(255, 0, 106, 0.57) !important;
 }
-.editFormlabel input[type=text]:invalid +.errorText  {
-  display:block;
+.editFormlabel input[type='text']:invalid + .errorText {
+	display: block;
 }
 
 /* ----------------/EditForm---------------- */
 
 /* ---------------なんか作ったボタン------------------- */
 .todoBtn {
-  width: 50px;
-  height: 50px;
-  box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.4);
-  border-radius: 0;
-  background: #fff;
-  border-radius: 25px;
-  font-family: 'Quicksand', 'Noto Sans JP',sans-serif;
-  margin: 10px;
+	width: 50px;
+	height: 50px;
+	box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.4);
+	border-radius: 0;
+	background: #fff;
+	border-radius: 25px;
+	font-family: 'Quicksand', 'Noto Sans JP', sans-serif;
+	margin: 10px;
 }
 
 .todoBtn:hover {
-  color: #fff;
-  background: #888;
-  border: 1px solid #888;
+	color: #fff;
+	background: #888;
+	border: 1px solid #888;
 }
 
 /* ---------------/なんか作ったボタン------------------- */

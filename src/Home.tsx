@@ -1,10 +1,6 @@
-import React from 'react';
+import React from 'react'
 
-const Home:React.FC = () => {
-  return (
-    <div className="home">
-      About todo?
-    </div>
-  );
+const Home: React.FC = function () {
+	return <div className='home'>About todo?</div>
 }
-export default Home;
+export default Home
