@@ -7,7 +7,7 @@ export interface TodoValue {
 	text: string
 }
 
-const TodoList = () =>  {
+const TodoList = function() {
 	const [input, setInput] = useState<string | null>()
 	const [isValidation, setIsValidation] = useState(true)
 	const [todoValue, setTodoValue] = useState<TodoValue[]>([])
