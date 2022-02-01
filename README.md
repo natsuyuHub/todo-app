@@ -11,11 +11,13 @@
 `$ npm start`
 
 db設定
-mysql  Ver 8.0.26
+`mysql  Ver 8.0.26`
 
-MYSQL_DATABASE react-app
-MYSQL_USER root
-MYSQL_PASSWORD password
+`MYSQL_DATABASE = react-app`
+
+`MYSQL_USER = root`
+
+`MYSQL_PASSWORD = password`
 
 ```
 CREATE TABLE todo (id INT NOT NULL PRIMARY KEY AUTO_INCREMENT, uuid VARCHAR(255) NOT NULL, todovalue TEXT NOT NULL, status BOOLEAN NOT NULL DEFAULT 0);
