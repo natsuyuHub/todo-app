@@ -10,7 +10,8 @@
 
 `$ npm start`
 
-db設定
+## db設定
+
 `mysql  Ver 8.0.26`
 
 `MYSQL_DATABASE = react-app`
