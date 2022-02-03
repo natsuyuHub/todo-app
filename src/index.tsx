@@ -8,35 +8,35 @@ import Data from './Data'
 import TodoList from './TodoList'
 
 ReactDOM.render(
-	<React.StrictMode>
-		<BrowserRouter>
-			<Container maxWidth='md'>
-				<nav className='menu-nav'>
-					<ul>
-						<li>
-							<Link to='/'>Home</Link>
-						</li>
-						<li>
-							<Link to='/todo'>TodoList</Link>
-						</li>
-						<li>
-							<Link to='/data'>Data</Link>
-						</li>
-					</ul>
-				</nav>
-				<Switch>
-					<Route exact path='/'>
-						<Home />
-					</Route>
-					<Route exact path='/todo'>
-						<TodoList />
-					</Route>
-					<Route exact path='/data'>
-						<Data />
-					</Route>
-				</Switch>
-			</Container>
-		</BrowserRouter>
-	</React.StrictMode>,
-	document.getElementById('root')
+  <React.StrictMode>
+    <BrowserRouter>
+      <Container maxWidth='md'>
+        <nav className='menu-nav'>
+          <ul>
+            <li>
+              <Link to='/'>Home</Link>
+            </li>
+            <li>
+              <Link to='/todo'>TodoList</Link>
+            </li>
+            <li>
+              <Link to='/data'>Data</Link>
+            </li>
+          </ul>
+        </nav>
+        <Switch>
+          <Route exact path='/'>
+            <Home />
+          </Route>
+          <Route exact path='/todo'>
+            <TodoList />
+          </Route>
+          <Route exact path='/data'>
+            <Data />
+          </Route>
+        </Switch>
+      </Container>
+    </BrowserRouter>
+  </React.StrictMode>,
+  document.getElementById('root')
 )
